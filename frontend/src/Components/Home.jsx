@@ -8,19 +8,13 @@ const Home = () => {
    const handleButton =()=>{
     navigate('/guessingGame')
    }
-   const style ={
-    
-  button:{
-        width:'200px',height:'200px', borderRadius:'50%',
-        marginLeft:'100px'
-    }
-    
-   }
+   
   return (
-    <div>
-        <h1>Welcome to Guessing Number</h1>
+    <div className='home'>
+        <h1 className='header'>Welcome to Guessing Number</h1>
+        <h1>Guess the Number Game</h1>
 
-        <button  onClick={handleButton} style={style.button}>START</button>
+        <button  className='btn' onClick={handleButton} >START</button>
     </div>
   )
 }

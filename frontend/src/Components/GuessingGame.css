@@ -93,7 +93,7 @@ p {
     bottom: 30px;
     font-size: 20px;
     font-weight: bold;
-    color: #d32f2f;
+    color: #f43535;
 }
 
 .userName {
@@ -162,7 +162,7 @@ p {
     right: 20px;
 }
 .modal-close-button:hover{
-color: #c80f0f;
+color: #f11010;
 
 }
 
