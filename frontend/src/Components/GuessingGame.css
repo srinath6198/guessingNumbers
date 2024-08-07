@@ -1,14 +1,28 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #e0f7fa;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    overflow: hidden; 
+    position: relative; 
 }
 
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../Assets/number.avif'); 
+    background-size: cover; 
+    background-position: center; 
+    filter: blur(3px); 
+    z-index: -1;
+}
 .container {
     background-color: #ffffff;
     padding: 30px 150px;
@@ -93,7 +107,7 @@ p {
 .userName p {
     font-size: 20px;
     font-weight: bold;
-    color: #03a39d;
+    color: #000000;
 }
 
 .userName img {
@@ -154,5 +168,5 @@ color: #c80f0f;
 
 .best-score p{
 font-size: 1.4em;
-color:#2e7d32;
+color:#000000;
 }

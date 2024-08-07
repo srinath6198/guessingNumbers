@@ -152,7 +152,7 @@ const GuessingGame = () => {
                     </div>
                     <div className="userName">
                         <span><img src={profile} alt="User Profile" /></span>
-                        <p>{name}</p>
+                        <p>User: {name}</p>
                     </div>
                     <input
                         type="text"
