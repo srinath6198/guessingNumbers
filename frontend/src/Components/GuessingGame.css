@@ -49,6 +49,16 @@ input[type="text"] {
     font-size: 16px;
 }
 
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #b8b9ba;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
 button {
     width: 100%;
     padding: 12px;

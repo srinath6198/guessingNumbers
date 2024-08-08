@@ -12,7 +12,7 @@ const generateUniqueNumber = () => {
     while (number.length < 4) {
         const index = Math.floor(Math.random() * digits.length);
         number += digits[index];
-        digits.splice(index, 1);
+        // digits.splice(index, 1);
     }
     console.log(number);
     return number;
@@ -81,7 +81,7 @@ const GuessingGame = () => {
         let computerNumber = number.split('');
         let userGuess = guess.split('');
         let correct = 0;
-        let feedbackArray = ['.', '.', '.', '.'];
+        let feedbackArray = ['*', '*', '*', '*'];
 
         for (let i = 0; i < userGuess.length; i++) {
             if (userGuess[i] === computerNumber[i]) {
