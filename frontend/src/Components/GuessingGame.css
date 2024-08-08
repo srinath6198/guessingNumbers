@@ -131,13 +131,13 @@ p {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     width: 100%;
-    max-width: 400px;
+    max-width: 700px;
     text-align: center;
 }
 
 .modal button {
     margin-top: 20px;
-    background-color: #00838f;
+    background-color: #1be5f8;
     color: #ffffff;
     border: none;
     width: 200px;
@@ -148,7 +148,7 @@ p {
 }
 
 .modal button:hover {
-    background-color: #005662;
+    background-color: #06aec5;
 }
 
 .modal-close-button {

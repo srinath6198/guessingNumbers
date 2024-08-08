@@ -168,6 +168,7 @@ const GuessingGame = () => {
             )}
 
             <Modal isOpen={isModalOpen} onRequestClose={closeModal} className="modal">
+                <h2> Congratulations {name} you Win </h2>
                 <h2>Your Score</h2>
                 {bestScore && (
                     <div className="best-score">
