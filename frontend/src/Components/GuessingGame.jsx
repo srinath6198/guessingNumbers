@@ -3,7 +3,7 @@ import axios from 'axios';
 import './GuessingGame.css';
 import profile from '../Assets/profile.png';
 import Modal from 'react-modal';
-import { FaTimes } from 'react-icons/fa'; // Import the close icon from react-icons
+import { FaTimes } from 'react-icons/fa'; 
 
 const generateUniqueNumber = () => {
     const digits = '0123456789'.split('');
