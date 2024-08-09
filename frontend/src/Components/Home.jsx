@@ -14,7 +14,7 @@ const Home = () => {
         <h1 className='header'>Welcome to Guessing Number</h1>
         <h1>Guess the Number Game</h1>
 
-        <button  className='btn' onClick={handleButton} >START</button>
+        <button  className='btn' id="str" onClick={handleButton} >START</button>
     </div>
   )
 }
