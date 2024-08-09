@@ -31,6 +31,8 @@ const GuessingGame = () => {
     const [timer, setTimer] = useState(0);
     const [isModalOpen, setIsModalOpen] = useState(false);
     const intervalRef = useRef(null);
+    const[completedtime,setCompletedtime]=useState(0)
+    const[curentuserscore,setCurrentuserScore]=useState(0)
 
     useEffect(() => {
         const fetchBestScore = async () => {
@@ -70,9 +72,12 @@ const GuessingGame = () => {
     };
 
     const calculateScore = (time, guesses) => {
+        setCompletedtime(time)
         const weightTime = 2;
         const weightGuesses = 1;
-        return (weightTime * time + weightGuesses * guesses) / (weightTime + weightGuesses);
+        let data= (weightTime * time + weightGuesses * guesses) / (weightTime + weightGuesses);
+        setCurrentuserScore(data)
+        return data;
     };
 
     const handleGuess = async () => {
@@ -168,14 +173,14 @@ const GuessingGame = () => {
             )}
 
             <Modal isOpen={isModalOpen} onRequestClose={closeModal} className="modal">
-                <h2> Congratulations {name} you Win </h2>
+                <h2> Congratulations! {name} You Won </h2>
                 <h2>Your Score</h2>
                 {bestScore && (
                     <div className="best-score">
-                        <p>Name: {bestScore.name}</p>
-                        <p>Score: {bestScore.score}</p>
-                        <p>Guesses: {bestScore.guesses}</p>
-                        <p>Time Taken: {bestScore.timeTaken}s</p>
+                        <p>Name: {name}</p>
+                        <p>Score: {curentuserscore}</p>
+                        <p>Guesses: {guesses}</p>
+                        <p>Time Taken: {completedtime}s</p>
                     </div>
                 )}
                 <button onClick={closeModal}><FaTimes /></button>
